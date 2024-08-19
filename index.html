@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirector</title>
+</head>
+<body>
+    <h1>qwq 的小窝已经迁移到 <a href="https://qwqautomaton.netlify.app">Netlify</a> 页面！</h1>
+    将在 <span id="countdown">5</span> 秒钟后自动跳转……
+    <script>
+        let cnt = 5;
+        setInterval(() => {
+            cnt--;
+            document.getElementById("countdown").innerHTML = cnt;
+        }, 1000);
+        setTimeout(() => {
+            window.location.href = "https://qwqautomaton.netlify.app";
+        }, 5000);
+    </script>
+</body>
+</html>
