@@ -1,0 +1,2 @@
+# blog
+redirect to netlify
